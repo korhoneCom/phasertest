@@ -15,13 +15,13 @@ export class Game extends Scene
 
         this.text = this.add.text(32, 32);
 
-        this.add.text(512, 384, 'Make something fun!\nand share it with us:\nsupport@phaser.io', {
+        this.add.text(512, 384, 'Testailua', {
             fontFamily: 'Arial Black', fontSize: 38, color: '#ffffff',
             stroke: '#000000', strokeThickness: 8,
             align: 'center'
         }).setOrigin(0.5);
 
-        this.timedEvent = this.time.delayedCall(3000, this.onEvent, [], this);
+        this.timedEvent = this.time.delayedCall(10000, this.onEvent, [], this);
     }
 
     update ()
