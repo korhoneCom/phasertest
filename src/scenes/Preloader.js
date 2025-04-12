@@ -33,6 +33,9 @@ export class Preloader extends Scene
         this.load.setPath('assets');
 
         this.load.image('logo', 'logo.png');
+        this.load.image('player', 'player.png');
+        this.load.image('platform', 'platform.png');
+        this.load.spritesheet('zombie','zombie.png',{frameWidth:64,frameHeight:128})
     }
 
     create ()
